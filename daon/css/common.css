@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+/* font-family: 'Karla', sans-serif; */
+/* font-family: 'Lora', serif; */
+
+
+html, body{width:100%; margin:0}
+p,figure,h1,h2,h3,h4,h5,h6{margin:0;}
+ul,li{list-style: none; margin:0; padding:0;}
+*{
+    box-sizing:border-box;
+    font-family: 'Karla Nanumsquare',sans-serif;
+}
+img{vertical-align: top;}
+a{text-decoration: none;
+}
+main{
+    width:100%;
+    margin:2.7vw auto 0;
+    }
+
+
+/* --------header-------- */
+
+.openmenu, .burger{display:none;}
+
+header{
+    width:100%; height:2.7vw;
+    margin:0 auto;
+    padding:0;
+    position:fixed;
+    z-index: 999;
+    left:0; top:0;
+    background:#003a3a;
+    
+    }
+.head{
+    width:80%; margin:0 auto;
+    
+}
+.head:after{
+    content:'';
+    clear:both;
+    display:block;
+}
+.head h1{
+    float:left;
+    margin:5px 0;
+}
+.head h1 a{color:white;}
+.head .menu{
+    float:right;
+    margin-top:10px;
+    
+}
+.head .menu ul{
+}
+.head .menu ul li{
+    display:inline-block;
+    margin:0 20px;
+    position:relative;
+    z-index:2;
+}
+.head .menu .last{
+    margin-right:0;
+}
+.head .menu li a{
+    color:white;
+}
+.head .menu .submenu{
+    position:absolute;
+    left:0; bottom:0;
+    transform: translateY(100%) translateX(-25%);
+    background:rgba(255,255,255,0.6);
+    display:none;
+    text-align: center;
+}
+.head .menu .last .submenu{
+    position:absolute;
+    left:0; bottom:0;
+    transform: translateY(100%) translateX(-10%);
+}
+.head .menu .submenu li{
+    text-align: center;
+}
+.head .menu .submenu li a{
+    color:black;
+    padding:10px;
+    display:inline-block;
+    font-size:0.8rem;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.head .menu li:hover .submenu{
+    display:block;
+}
+
+
+
+/* title */
+
+.prologue_title{
+    width:100%; 
+    margin:0 auto;
+    
+}
+.prologue_title figure{
+    position:relative;
+    margin:0;
+    width:100%; height:100%;
+}
+.prologue_title figure img{
+    width:100%;
+    margin:0;
+    
+}
+.prologue_title figure figcaption{
+    width:100%;
+    position:absolute;
+    left:0%; bottom:35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.prologue_title figure figcaption p{
+    font-size: 40px;
+    margin:0;
+    text-align:center;
+}
+.prologue_title figure figcaption small{
+    font-size:16px;
+    text-align:center;
+    display:block;
+    margin:0;
+}
+
+/* tab */
+
+.prologue_tab{
+    padding:7% 0;
+}
+.prologue_tab ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.prologue_tab ul li{
+    display: inline-block;
+    margin:0 20px;
+    width:150px; height:40px;
+    background: #e5e5e5;
+    text-align: center;
+    line-height: 40px;
+}
+
+.prologue_tab li:hover,
+.prologue_tab .active{
+    background: #ceb581;
+}
+.prologue_tab li:hover a,
+.prologue_tab .active a{
+    color:white;
+}
+.prologue_tab ul li a{
+    display:inline-block;
+    text-decoration: none;
+    font-size:16px;
+    color:black;
+}
+
+/* subtitle */
+
+.subtitle{
+    width:100%; margin:8% auto;
+}
+.subtitle h2{position:relative;}
+.subtitle h2::after{
+    content:'';
+    border-bottom:1px solid #dcdcdc;
+    display:block;
+    width:80%; margin:0 auto;
+
+}
+.subtitle h2 span{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+    padding:0 20px; 
+    background:#fff;
+    font-size:16px;
+}
+
+/* table */
+table{border-collapse:collapse;}
+
+
+/* footer */
+
+footer{
+    width:100%; height:100%;
+    margin:10% auto 0;
+    background:#1c222e;}
+.foot{
+    width:80%; height:100%;
+    margin:0 auto;
+    text-align:center;
+}
+.foot div {
+    padding:3% 0;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.foot div p{
+    font-size:12px;
+    color:white;
+    font-weight: bold;
+    margin:0;
+}
+.foot ul{}
+.foot ul li{
+    display: inline-block;
+    color:#a9a8a8;
+    margin:10px 20px;
+    font-size:10px;
+}
+.foot small{
+    display:block;
+    font-size:10px;
+    color:#a9a8a8;
+    margin:0 0 10px 0;
+}
+.foot a{
+    font-size:10px;
+    display:block;
+    width:132px; height:25px;
+    border:1px solid #a9a8a8;
+    text-decoration: none;
+    color:#a9a8a8;
+    text-align:center; line-height:25px;
+}
+
+@media (max-width:480px){
+    main{margin:42px 0 0;}
+    
+    header{width:100%; margin:0 auto; height:auto;}
+    .head{
+        width:100%;
+        margin:0 auto;
+        position:relative;
+        padding:0 10%;
+        }
+    
+    .burger{
+        position: absolute;
+        top:30%; right:10%;
+        display:block;
+        float:right;
+        color:white;
+    }
+    .head .menu{
+        width:100%; height:auto;
+        background:#003a3a;
+        position:absolute;
+        width:100%;
+        left:100%; right:-100%; top:70%;
+        transition:.35s;
+    }
+    .head .menu ul{
+        width:100%; height:100%;
+    }
+    .head .menu ul li{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding:15px 0;
+    }
+    .head .menu li:nth-of-type(4){
+    margin-right:20px;
+    }
+    .head .menu ul li > a{
+        color:#ceb581;
+        text-align: center;
+        text-decoration: underline;
+        
+    }
+    .head .menu .submenu{
+        width:100%; height:auto;
+        background:none;
+        position:static;
+        display:block;
+        color:white;
+        transform: translateY(0) translateX(0);
+    }
+    
+    .head .menu .submenu li{
+        padding:0;
+    }
+    .head .menu .submenu li a{
+        color:white;
+        text-decoration: none;
+    }
+    .head .menu .submenu li a:hover{
+        color:#ceb581;
+    }
+    .head .menu .last .submenu{
+        width:100%; height:auto;
+        position:static;
+        display:block;
+        transform: translateY(0) translateX(0);
+    }
+    .openmenu:checked + .burger + .menu{
+        width:100%;
+        left:0; top:70%;
+    }
+    .foot div {
+        padding:8% 0;
+    }
+    .foot div p{
+        margin-bottom:5px;
+    }
+    .foot ul li{
+        display: inline-block;
+        color:#a9a8a8;
+        margin:0;
+        font-size:10px;
+    }
+
+}
