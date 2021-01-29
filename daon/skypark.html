@@ -6,6 +6,11 @@
     <title>skypark</title>
     <link href="css/special.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/25f22587a3.js" crossorigin="anonymous"></script>
+
+    <!-- include jQuery & cycle2 -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+       
 </head>
 <body>
     <header>
@@ -91,32 +96,32 @@
             </div>
 
             <div class="gallery">
-                <div class="slide">
-                    <figure>
-                        <img src="imgs/skypark_01.png" alt="skypark">
-                    </figure>
-                    <!-- <figure>
-                        <img src="imgs/BBQ.png">
-                    </figure>
-                    <figure>
-                        <img src="imgs/BBQ.png">
-                    </figure> -->
-    
-                    <div class="direc">
-                        <div>
-                        <i class="fas fa-chevron-left"></i>
-                        <i class="fas fa-chevron-right"></i>
-                        </div>
+                <div class="banner prologue_slider">
+                    <div class="banner_list cycle-slideshow"
+                    data-cycle-fx="scrollHorz" 
+                    data-cycle-timeout=0
+                    data-cycle-prev=".banner .prev"
+                    data-cycle-next=".banner .next"
+                    data-cycle-pager=".banner .pager"
+                    
+                    >
+                        <img src="imgs/skypark_01-2.jpg" alt="slide1">
+                        <img src="imgs/skypark_02.jpg" alt="slide2">
+                        <img src="imgs/skypark_03.jpg" alt="slide3">
                     </div>
-    
-                    <div class="indi">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
+
+                    <p class="controls">
+                        <a href="#" class="prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#" class="next">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </p>
+                    <p class="pager">
+                    </p>
+                    
+                </div> <!-- //banner -->
             </div>
         </aritlce>
 

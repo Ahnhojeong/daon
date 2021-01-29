@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url"                content="https://ahnhojeong.github.io/daon/daon/" />
+	<meta property="og:title"              content="DAON" />
+	<meta property="og:description"        content="다온펜션에서 당신을 기다립니다" />
+    <meta property="og:image"              content="daon/imgs/room/loveroom_101_02" />
+
     <title>DAON</title>
     <link href="css/main.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/25f22587a3.js" crossorigin="anonymous"></script>
+    <link href="imgs/favicon-daon.ico" type="image/x-icon" rel="shortcut icon">
+
+    <!-- include jQuery & cycle2 -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
 </head>
 
 
@@ -57,39 +67,52 @@
     </header>
 
     <main>
-        <div class="mainspot">
-            <div class="slide">
-                <figure>
-                    <img src="imgs/pension2.png" alt="daon pension">
-                    <figcaption>
-                        <p>Gapyeong No.1 Pension
-                        <small>가평 넘버원 펜션 다온</small></p>
-                    </figcaption>
-                </figure>
-
-                <div class="direc">
-                    <div>
-                    <i class="fas fa-chevron-left"></i>
-                    <i class="fas fa-chevron-right"></i>
+        <div class="banner">
+            <ul class="banner_list cycle-slideshow"
+            data-cycle-fx="scrollHorz" 
+            data-cycle-timeout=0
+            data-cycle-prev=".banner .prev"
+            data-cycle-next=".banner .next"
+            data-cycle-pager=".banner .pager"
+            data-cycle-slides=".slide"
+            >
+                <li class="slide1 slide">
+                    <div class="slide_txt">
+                        <p>
+                            Gapyeong No.1 Pension
+                            <small>가평 넘버원 펜션 다온</small>
+                        </p>
                     </div>
-                </div>
-
-                <div class="indi">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-
-                <div class="reser_btn">
-                    <a href="https://bit.ly/38Zeuef">
-                    <i class="far fa-calendar-alt"></i>
-                    실시간 예약
-                    </a>
-                </div>
-            </div>
-        </div>
+                </li>
+                <li class="slide2 slide">
+                    <div class="slide_txt2">
+                        <p>
+                            Gapyeong No.1 Pension
+                            <small>가평 넘버원 펜션 다온</small>
+                        </p>
+                    </div>
+                </li>
+                <li class="slide3 slide">
+                    <div class="slide_txt2">
+                        <p>
+                            Gapyeong No.1 Pension
+                            <small>가평 넘버원 펜션 다온</small>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <p class="controls">
+                <a href="#" class="prev">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+                <a href="#" class="next">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </p>
+            <p class="pager">
+            </p>
+            
+        </div> <!-- //banner -->
 
         <div class=title>
             <p>DAON</p>
@@ -134,9 +157,17 @@
             </figure>
         </div>
 
+        <div class="schejule">
+            <a href="#">
+                <i class="far fa-clock"></i>
+            </a>
+        </div>
         <div class=fixed>
             <div>
-            <a href="#"></a>
+            <a href="#">
+                <i class="fas fa-arrow-up"></i>
+                <span>TOP</span>
+            </a>
             </div>
         </div>
 

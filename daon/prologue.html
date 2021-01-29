@@ -6,6 +6,10 @@
     <title>PROLOGUE</title>
     <link href="css/prologue.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/25f22587a3.js" crossorigin="anonymous"></script>
+    <!-- include jQuery & cycle2 -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+
 </head>
 <body>
     <header>
@@ -124,34 +128,34 @@
                         사랑하는 사람들과의 특별한 하루를 즐겨보세요.
                     </span>
                 </div>
-                <div class="land_con1">
-                    <div class="slide">
-                        <figure>
-                            <img src="imgs/main_visual_02.jpg" alt="slide">
-                        </figure>
-                        <!-- <figure>
-                            <img src="imgs/main visual 2.jpg">
-                        </figure>
-                        <figure>
-                            <img src="imgs/main visual 2.jpg">
-                        </figure> -->
-        
-                        <div class="direc">
-                            <div>
-                            <i class="fas fa-chevron-left"></i>
-                            <i class="fas fa-chevron-right"></i>
-                            </div>
+                
+                    <div class="banner prologue_slider">
+                        <div class="banner_list cycle-slideshow"
+                        data-cycle-fx="scrollHorz" 
+                        data-cycle-timeout=0
+                        data-cycle-prev=".banner .prev"
+                        data-cycle-next=".banner .next"
+                        data-cycle-pager=".banner .pager"
+                        
+                        >
+                            <img src="imgs/pension_view_07.jpg" alt="slide1">
+                            <img src="imgs/pension_view_02.jpg" alt="slide2">
+                            <img src="imgs/pension_view_03.jpg" alt="slide3">
                         </div>
-        
-                        <div class="indi">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+
+                        <p class="controls">
+                            <a href="#" class="prev">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                            <a href="#" class="next">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </p>
+                        <p class="pager">
+                        </p>
+                        
+                    </div> <!-- //banner -->
+                
             </article>
         </article>
     

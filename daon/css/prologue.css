@@ -27,8 +27,11 @@ ul,li{list-style: none; margin:0; padding:0;}
 /* prologue_wel */
 .prologue_wel{width:100%;}
 .prologue_wel div{
-    width:80%; margin:0 auto;}
-.prologue_wel div figure{width:60%;}
+    width:80%; margin:0 auto;
+    overflow: hidden;}
+.prologue_wel div figure{
+    width:60%;
+    }
 .prologue_wel div figure img{width:100%;}
 .prologue_wel div:nth-of-type(1){
     display:flex;
@@ -69,6 +72,19 @@ ul,li{list-style: none; margin:0; padding:0;}
     width:100%; vertical-align: middle;
 }
 
+.prologue_wel div:hover figure,
+.prologue_wel div:hover p{
+    animation:wel 2s forwards;
+}
+@keyframes wel{
+    0%{
+        transform:translateY(30%);
+        }
+    100%{
+        transform:translateY(0);
+        }
+}
+
 
 
 /* prologue_land */
@@ -104,67 +120,66 @@ ul,li{list-style: none; margin:0; padding:0;}
     line-height:1.7em; 
 }
 
-.land_con1{
+
+/* land slide */
+
+/* slide */
+
+.banner{
+    width:100%; margin:0 auto;
+    position: relative;
+}
+.banner_list .slide {
     width:100%;
-    margin-bottom:40px;
-}
-
-/* land_con1 slide */
-
-article .prologue_land article .land_con1{
-    width:100%; height:100%;
-    margin:0 auto;
-}
-article .land_con1 .slide{
-    position:relative;
-    width:100%; height:100%;
-}
-article .land_con1 .slide figure img{
-    width:100%;}
-
-
-
-/* direc */
-
-.slide .direc{
-    position:absolute;
-    left:10%; top:45%;
-    width:80%; margin:0 auto;
+    height:600px;
+    background-repeat: no-repeat;
+    background-position:center top;
+    background-size:cover;
     text-align:center;
+    padding-top:163px;
+    box-sizing: border-box;
 }
-.slide .direc div{
-    color:white;
-    width:100%; margin:0;
+.banner_list img{
+    width:100%;
+}
+
+
+.controls{
+    width:80%;
     display:flex;
     justify-content: space-between;
     align-items: center;
-}
-
-
-/* indigator */
-.land_con1 .slide .indi{
     position:absolute;
-    right:10%; bottom:5%;
+    left:10%; top:50%;
+    text-align:center;
+    transform:translateY(-50%);
+    z-index:102;
+}
+.controls a{
+    font-size:55px;
+    color:rgba(255,255,255,0.5);
+    z-index:102;
 
 }
-.land_con1 .slide .indi ul::after{
-    content:'';
-    clear:both;
-    display:inline-block;
-}
-.land_con1 .slide .indi ul{
-    float:right;
-}
-.land_con1 .slide .indi ul li{
-    display:inline-block;
-    width:10px; height:10px;
-    background:white;
-    border-radius: 50%;
-    margin:0 3px;
-    box-shadow: 3px 3px rgba(0,0,0,0.4);
- 
-}
 
+.pager{
+    position:absolute;
+    left:0; right:0; bottom:27px;
+    text-align: center;
+    z-index:103;
+}
+.pager span{
+    width:15px; height:15px;
+    background:rgba(255,255,255,0.8);
+    border:3px solid transparent;
+    margin:0 15px; border-radius:50%;
+    text-indent: -9999em;
+    display:inline-block;
+}
+.pager span.cycle-pager-active{
+    background:none;
+    border:3px solid rgba(255,255,255,0.8);
+}
 
 
 /* prologue_loca */
@@ -275,6 +290,16 @@ article .land_con1 .slide figure img{
     .prologue_land .land_text span:nth-of-type(2){
         font-size:0.8rem;
         margin:6% 0;}
+
+    .controls a{
+        font-size:30px;
+    }
+    .pager{bottom:0;}
+    .pager span{
+        width:10px; height:10px;
+        margin:0 10px;
+    }
+
     .prologue_loca .loca_info ul{
         width:100%;
         display:flex;
