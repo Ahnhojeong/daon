@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+    <title>BBQ</title>
+    <link href="css/special.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/25f22587a3.js" crossorigin="anonymous"></script>
+
+        <!-- include jQuery & cycle2 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="https://malsup.github.com/jquery.cycle2.js"></script>
+        <script src="//cdn.rawgit.com/fdaciuk/ajax/v3.0.4/dist/ajax.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <article class="head">
+            <h1><a href="index.html">DAON</a></h1>
+
+            <input type="checkbox" class="openmenu" id="openmenu">
+            <label for="openmenu" class="burger">
+                <i class="fa fa-bars"></i>
+            </label>
+
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="prologue.html">ABOUT</a>
+                        <ul class="submenu">
+                            <li><a href="prologue.html">펜션소개</a></li>
+                            <li><a href="travel.html">주변여행지</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="room.html">ROOM</a>
+                        <ul class="submenu">
+                            <li><a href="room.html">미리보기</a></li>
+                            <li><a href="layout.html">펜션배치도</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="bbq.html">SPECIAL</a>
+                        <ul class="submenu">
+                            <li><a href="bbq.html">BBQ</a></li>
+                            <li><a href="swimming.html">야외수영장</a></li>
+                            <li><a href="skypark.html">옥상정원</a></li>
+                            <li><a href="cafeteria.html">카페테리아</a></li>
+                        </ul>
+                    </li>
+                    <li class="last">
+                        <a href="reservation.html">RESERVATION</a>
+                        <ul class="submenu">
+                            <li><a href="reservation.html">예약안내</a></li>
+                            <li><a href="https://bit.ly/38Zeuef">실시간예약</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </article>
+    </header>
+
+    <main>
+    
+        <div class="prologue_title">
+            <figure>
+                <img src="imgs/special_title.png" alt="Facilities">
+                <figcaption>
+                    <p>SPECIAL</p>
+                    <small>차원이 다른 특별한 시설</small>
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="prologue_tab">
+            <ul>
+                <li class="active"><a href="bbq.html">BBQ</a></li>
+                <li><a href="swimming.html">야외수영장</a></li>
+                <li><a href="skypark.html">하늘공원</a></li>
+                <li><a href="cafeteria.html">카페테리아</a></li>
+            </ul>
+        </div>
+
+        <aritlce class="special_spot">
+            <div class="spot_txt">
+                <p>BBQ</p>
+                <p>여행에 빠질수 없는즐거움, 바베큐파티
+                    고기, 해산물 등을 구워 드실 수 있는 바비큐장!
+                    
+                    깊어가는 여행의 밤을
+                    맛있는 바베큐와 함께 즐겨보세요.
+                    <small>
+                    * 준비 시간 : 제한없음
+                    * 이용 시간 : 제한없음
+                    * 이용 요금 : 2~4인 20,000원 / 5~6인 30,000원
+                    </small>
+                </p>
+            </div>
+
+            <div class="gallery">
+                <div class="banner prologue_slider">
+                    <div class="banner_list cycle-slideshow"
+                    data-cycle-fx="scrollHorz" 
+                    data-cycle-timeout=0
+                    data-cycle-prev=".banner .prev"
+                    data-cycle-next=".banner .next"
+                    data-cycle-pager=".banner .pager"
+                    
+                    >
+                        <img src="imgs/bbq_01-1.jpg" alt="slide1">
+                        <img src="imgs/bbq_02.jpg" alt="slide2">
+                        <img src="imgs/bbq_03.jpg" alt="slide3">
+                    </div>
+
+                    <p class="controls">
+                        <a href="#" class="prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </a>
+                        <a href="#" class="next">
+                            <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </p>
+                    <p class="pager">
+                    </p>
+                    
+                </div> <!-- //banner -->
+            </div>
+        </aritlce>
+
+        <article class="all_special">
+            <article>
+                <span></span>
+                <p>Special Place</p>
+                <div>
+                    <figure>
+                        <img src="imgs/swimming.png" alt="swimming">
+                        <figcaption><a href="swimming.html">Swimming Pool</a></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="imgs/skypark.png" alt="skypark">
+                        <figcaption><a href="skypark.html">Sky Park</a></figcaption>
+                    </figure>
+                    <figure>
+                        <img src="imgs/cafe.png" alt="cafeteria">
+                        <figcaption><a href="cafeteria.html">Cafeteria</a></figcaption>
+                    </figure>
+                </div>
+            </article>
+        </article>
+    </main>
+
+    
+        <footer>
+            <div class="foot">
+                <div>
+                <p>T.010-3923-0662</p>
+                <ul>
+                    <li>주소 : 경기 가평군 가평읍 강변안로 357-187</li>
+                    <li>업체명 : 다온</li>
+                    <li>대표자 : 박춘하</li>
+                    <li>사업자번호 : 286-11-00158</li>
+                </ul>
+                <small>@COPYRIGHT2021</small>
+                <a href="#">개인정보처리방침</a>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

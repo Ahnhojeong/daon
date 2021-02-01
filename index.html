@@ -3,53 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLARA</title>
+    <meta property="og:url"                content="https://ahnhojeong.github.io/daon/daon/" />
+	<meta property="og:title"              content="DAON" />
+	<meta property="og:description"        content="다온펜션에서 당신을 기다립니다" />
+    <meta property="og:image"              content="imgs/room/loveroom_101_02.jpg" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+
+    <title>DAON</title>
     <link href="css/main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/25f22587a3.js" crossorigin="anonymous"></script>
+    <link href="imgs/favicon-daon.ico" type="image/x-icon" rel="shortcut icon">
+
+    <!-- include jQuery & cycle2 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://malsup.github.com/jquery.cycle2.js"></script>
+    <script src="//cdn.rawgit.com/fdaciuk/ajax/v3.0.4/dist/ajax.min.js"></script>
+    
 </head>
+
+
 <body>
+    <header>
+        <article class="head">
+            <h1><a href="index.html">DAON</a></h1>
 
-<!-- index.html -->
+            <input type="checkbox" class="openmenu" id="openmenu">
+            <label for="openmenu" class="burger">
+                <i class="fa fa-bars"></i>
+            </label>
 
-<header>
-    <article>
-        <h1>CLARA</h1>
-        <nav>
-            <a href="#">about</a>
-            <a href="#">service</a>
-            <a href="#">product</a>
-            <a href="#">contact us</a>
-        </nav>
-        <a class="menu-trigger" href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-        </a>
-    </article>
-</header>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="prologue.html">ABOUT</a>
+                        <ul class="submenu">
+                            <li><a href="prologue.html">펜션소개</a></li>
+                            <li><a href="travel.html">주변여행지</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="room.html">ROOM</a>
+                        <ul class="submenu">
+                            <li><a href="room.html">미리보기</a></li>
+                            <li><a href="layout.html">펜션배치도</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="bbq.html">SPECIAL</a>
+                        <ul class="submenu">
+                            <li><a href="bbq.html">BBQ</a></li>
+                            <li><a href="swimming.html">야외수영장</a></li>
+                            <li><a href="skypark.html">옥상정원</a></li>
+                            <li><a href="cafeteria.html">카페테리아</a></li>
+                        </ul>
+                    </li>
+                    <li class="last">
+                        <a href="reservation.html">RESERVATION</a>
+                        <ul class="submenu">
+                            <li><a href="reservation.html">예약안내</a></li>
+                            <li><a href="https://bit.ly/38Zeuef">실시간예약</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </article>
+    </header>
 
-<main>
-    <div class="spot">
-        <article>
-            <h2>Summer Trends</h2>
+    <main>
+        <div class="banner">
+            <ul class="banner_list cycle-slideshow"
+            data-cycle-fx="scrollHorz" 
+            data-cycle-timeout=0
+            data-cycle-prev=".banner .prev"
+            data-cycle-next=".banner .next"
+            data-cycle-pager=".banner .pager"
+            data-cycle-slides=".slide"
+            >
+                <li class="slide1 slide">
+                    <div class="slide_txt">
+                        <p>
+                            Gapyeong No.1 Pension
+                            <small>가평 넘버원 펜션 다온</small>
+                        </p>
+                    </div>
+                </li>
+                <li class="slide2 slide">
+                    <div class="slide_txt2">
+                        <p>
+                            Gapyeong No.1 Pension
+                            <small>가평 넘버원 펜션 다온</small>
+                        </p>
+                    </div>
+                </li>
+                <li class="slide3 slide">
+                    <div class="slide_txt2">
+                        <p>
+                            Gapyeong No.1 Pension
+                            <small>가평 넘버원 펜션 다온</small>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <p class="controls">
+                <a href="#" class="prev">
+                    <i class="fas fa-chevron-left"></i>
+                </a>
+                <a href="#" class="next">
+                    <i class="fas fa-chevron-right"></i>
+                </a>
+            </p>
+            <p class="pager">
+            </p>
+            
+        </div> <!-- //banner -->
+
+        <div class=title>
+            <p>DAON</p>
+            <small>Nature Healling Spa Pension</small>
+        </div>
+
+        <ul class="main_con1">
+            <li>
+                <figure><img src="imgs/land_scape.jpg" alt="daon pension landscape"></figure>
+                <div>
+                    <h3>Watch the most beautiful Landscape</h3>
+                    <p>가평의 대자연을 품은 다온의
+                    경치를 확인해보세요</p>
+                    <a href="prologue.html">VIEW MORE</a>
+                </div>
+            </li>
+            <li>
+                <figure><img src="imgs/main_con2.jpg" alt="daon pension Facilities"></figure>
+                <div>
+                    <h3>Watch altimate Facilities</h3>
+                    <p>차원이 다른 다온의
+                    특별한 시설을 만나보세요</p>
+                    <a href="bbq.html">VIEW MORE</a>
+                </div>
+            </li>
+        </ul>
+
+        <div class="main_con2">
             <figure>
-                <img src="imgs/img_trend.jpg.jpg">
+                <div>
+                    <span></span>
+                    <p>Healing Place</p>
+                    <small>다온펜션에서 기분 좋은 선물을 해드립니다.</small>
+                </div>
+                <img src="imgs/spa.jpg" alt="spa daon pension">
                 <figcaption>
-                    YOU WANT TO ROCK THIS LOOK?
-                    <a href="#"><mark>YOU CAN</mark> GET THEM <b>HERE</b></a>
+                  <p>Welcome to Daon</p>  
+                  <small>Stays with sea views in all rooms have
+                      crispy duvets and cute props.
+                    There is also a panoramic sea view and sunshine every morning.</small>
                 </figcaption>
             </figure>
-            <span>
-                <a href="#" title="facebook"></a>
-                <a href="#" title="twitter"></a>
-                <a href="#" title="instagram"></a>
-            </span>
-        </article>
-    </div>
-</main>
+        </div>
 
-<footer>
-    @2021 Copyright.
-</footer>
+        <div class="schejule">
+            <a href="#">
+                <i class="far fa-clock"></i>
+            </a>
+        </div>
+        <div class=fixed>
+            <div>
+            <a href="#">
+                <i class="fas fa-arrow-up"></i>
+                <span>TOP</span>
+            </a>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <div class="foot">
+            <div>
+            <p>T.010-3923-0662</p>
+            <ul>
+                <li>주소 : 경기 가평군 가평읍 강변안로 357-187</li>
+                <li>업체명 : 다온</li>
+                <li>대표자 : 박춘하</li>
+                <li>사업자번호 : 286-11-00158</li>
+            </ul>
+            <small>@COPYRIGHT2021</small>
+            <a href="#">개인정보처리방침</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
