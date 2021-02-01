@@ -25,7 +25,7 @@
     box-sizing: border-box;
 }
 .banner_list .slide1 {
-    background-image:url('../imgs/pension2.png');
+    background-image:url('../imgs/pension2.jpg');
 }
 .banner_list .slide2 {
     background-image:url('../imgs/pension_view_02.jpg');
@@ -142,7 +142,7 @@
 }
 
 .main_con1 li figure img{
-    width:100%;
+    width:100%; vertical-align: top;
 }
 
 
