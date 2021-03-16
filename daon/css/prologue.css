@@ -187,14 +187,13 @@ ul,li{list-style: none; margin:0; padding:0;}
 .prologue_loca{
     width:100%; margin:0 auto;
 }
-.prologue_loca div:nth-of-type(2){
-    width:80%; margin:0 auto;
-    padding-bottom:3%;
-}
-.prologue_loca div:nth-of-type(2) img{
-    width:100%;
-}
 
+.map{
+    width:80%; margin:0 auto;
+    display:flex;
+    justify-content: center;
+    padding-bottom:5%;
+}
 .prologue_loca .loca_info{
     width:80%; margin:0 auto;
     

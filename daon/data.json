@@ -1,0 +1,56 @@
+{
+    "special" : [
+        {
+            "type" : "bbq",
+            "title" : "BBQ",
+            "detail" : [
+                "여행에 빠질수 없는즐거움, 바베큐파티 고기, 해산물 등을 구워 드실 수 있는 바비큐장! 깊어가는 여행의 밤을 맛있는 바베큐와 함께 즐겨보세요."
+               
+            ],
+            "imgSrc" : [
+                "imgs/bbq_01.jpg",
+                "imgs/bbq_02.jpg",
+                "imgs/bbq_03.jpg"
+            ]
+        },
+        {
+            "type" : "swimming pool",
+            "title" : "swimming pool",
+            "detail" : [
+                "무더운 여름을 시원하게 날려줄 야외 수영장이 마련되어 있습니다."
+                
+            ],
+            "imgSrc" : [
+                "imgs/pool_01.jpg",
+                "imgs/pool_02.jpg",
+                "imgs/pool_03.jpg"
+            ]
+        },
+        {
+            "type" : "skypark",
+            "title" : "skypark",
+            "detail" : [
+                "펜션의 정원은 오시는 분들 모두 여유로이 편안한 여행을 즐기실 수 있도록 조성된 공간입니다."
+               
+            ],
+            "imgSrc" : [
+                "imgs/skypark_01.jpg",
+                "imgs/skypark_02.jpg",
+                "imgs/skypark_03.jpg"
+            ]
+        },
+        {
+            "type" : "cafeteria",
+            "title" : "cafeteria",
+            "detail" : [
+                "북한강을 바라보며 여유와 휴식을 즐길 수 있는 행복한 공간이 준비되어 있습니다."
+                
+            ],
+            "imgSrc" : [
+                "imgs/cafe_01.jpg",
+                "imgs/cafe_02.jpg",
+                "imgs/cafe_03.jpg"
+            ]
+        }
+    ]
+}

@@ -9,14 +9,14 @@ p,figure,h1,h2,h3,h4,h5,h6{margin:0;}
 ul,li{list-style: none; margin:0; padding:0;}
 *{
     box-sizing:border-box;
-    font-family: 'Karla Nanumsquare',sans-serif;
+    font-family: 'Karla',sans-serif;
 }
 img{vertical-align: top;}
 a{text-decoration: none;
 }
 main{
     width:100%;
-    margin:40px auto 0;
+    margin:45px auto 0;
     }
 
 
@@ -45,9 +45,14 @@ header{
 }
 .head h1{
     float:left;
-    margin:5px 0;
+    height:100%;
 }
-.head h1 a{color:white;}
+.head h1 a{
+    color:white;
+    line-height: 1.8em;
+    display: inline-block;
+    height: 100%;
+}
 .head .menu{
     float:right;
     margin-top:10px;
@@ -96,6 +101,52 @@ header{
     display:block;
 }
 
+/* top-button */
+
+.fixed{
+    position:fixed;
+    right:0%;
+    bottom:5%;
+    width:3em; height:3em;
+    z-index:200;
+    text-align:center;
+    opacity:0;
+    transition:0.5s;
+}
+.fixed.back{
+    opacity: 1;
+}
+.fixed a{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    color:#ceb581;
+}
+
+/* reser-button */
+.schejule{
+    width:3em; height:3em;
+    background:#003a3a;
+    position:fixed;
+    right:0%; bottom:15%;
+    z-index:201;
+    text-align:center;
+    transition:0.5s;}
+
+.schejule a{
+    font-size:1.5em;
+    color:white;
+    text-align:center;
+    line-height:1.8em;
+    width:100%; height:100%;
+}
+.time{vertical-align: middle;}
+.schejule:hover{
+    background:#ceb581;
+}
 
 
 /* title */
@@ -175,7 +226,10 @@ header{
 .subtitle{
     width:100%; margin:8% auto;
 }
-.subtitle h2{position:relative;}
+.subtitle h2{
+    position:relative;
+    font-weight: 400;
+}
 .subtitle h2::after{
     content:'';
     border-bottom:1px solid #dcdcdc;
@@ -189,7 +243,7 @@ header{
     transform:translateX(-50%) translateY(-50%);
     padding:0 20px; 
     background:#fff;
-    font-size:16px;
+    font-size:18px;
 }
 
 /* table */
@@ -206,16 +260,20 @@ footer{
     width:80%; height:100%;
     margin:0 auto;
     text-align:center;
-}
-.foot div {
     padding:3% 0;
-    width:100%;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.foot div p{
+/* .foot div {
+    padding:3% 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+.foot p{
     font-size:12px;
     color:white;
     font-weight: bold;
@@ -252,7 +310,10 @@ footer{
         width:100%;
         margin:0 auto;
         position:relative;
-        padding:0 10%;
+        padding-left:10%;
+        padding-right:10%;
+        padding-bottom: 2px;
+        padding-top: 2px;
         }
     
     .burger{
@@ -271,7 +332,7 @@ footer{
         transition:.35s;
     }
     .head .menu ul{
-        width:100%; height:100%;
+        width:100%; height:100vh;
     }
     .head .menu ul li{
         display:flex;

@@ -21,7 +21,7 @@ main{
 }
 .mainspot .slide{
     position:relative;
-    width:100%; 
+    width:100%; height:100%;
 }
 .mainspot .slide figure{
     width:100%; height:100%;
