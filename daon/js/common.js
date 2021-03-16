@@ -13,85 +13,54 @@ $(function(){
 
     }
 
-    $.ajax({
-        url:'data.json',
-        success:function(data){
+    // $.ajax({
+    //     url:'data.json',
+    //     success:function(data){
             
             
 
-            function dataFun(idx){
-                var type='', title='', detail='', imgSrc='', tagList='',bbq='';
+    //         function dataFun(idx){
+    //             var type='', title='', detail='', imgSrc='', tagList='',bbq='';
                 
 
-                data.special.forEach(function(value,key){
-                    type = value.type;
-                    if(idx == type){
+    //             data.special.forEach(function(value,key){
+    //                 type = value.type;
+    //                 if(idx == type){
                 
                         
-                        title = value.title;
-                        detail = value.detail;
-                        imgSrc = value.imgSrc;
+    //                     title = value.title;
+    //                     detail = value.detail;
+    //                     imgSrc = value.imgSrc;
                         
 
-                        value.imgSrc.forEach(function(src){
-                            bbq += "<img src='"+src+"' alt='"+title+"'>";
-                        })
-                        console.log(bbq)
+    //                     value.imgSrc.forEach(function(src){
+    //                         bbq += "<img src='"+src+"' alt='"+title+"'>";
+    //                     })
+    //                     console.log(bbq)
                         
-                        tagList = "<p>" + title + "</p>";
-                        tagList += "<p>" + detail +"</p>";
+    //                     tagList = "<p>" + title + "</p>";
+    //                     tagList += "<p>" + detail +"</p>";
 
-                        $('.banner_list').html(bbq);
-                        $('.spot_txt .txt').html(tagList);
-                    }
-                    
-
-                //     "<div class='gallery'>"
-                //     "<div class='banner prologue_slider'>"
-                //         "<div class='banner_list cycle-slideshow'"
-                //         "data-cycle-fx='scrollHorz'"
-                //         "data-cycle-timeout=0"
-                //         "data-cycle-prev='.banner .prev'"
-                //         "data-cycle-next='.banner .next'"
-                //         "data-cycle-pager='.banner .pager'"
-                        
-                //         ">"
-                //             <img src="imgs/bbq_01.jpg" alt="slide1">
-                //             <img src="imgs/bbq_02.jpg" alt="slide2">
-                //             <img src="imgs/bbq_03.jpg" alt="slide3">
-                //         "</div>
-    
-                //         <p class="controls">
-                //             <a href="#" class="prev">
-                //                 <i class="fas fa-chevron-left"></i>
-                //             </a>
-                //             <a href="#" class="next">
-                //                 <i class="fas fa-chevron-right"></i>
-                //             </a>
-                //         </p>
-                //         <p class="pager">
-                //         </p>
-                        
-                //     </div> 
-                // </div>
-                });
+    //                     $('.banner_list').html(bbq);
+    //                     $('.spot_txt .txt').html(tagList);
+    //                 }
                
-            }
-            dataFun('bbq');
-            $('.prologue_tab ul li').on('click',function(e){
-                e.preventDefault();
-                var tabScr = $(this).attr("data-type");
-                //console.log(tabScr);
-                if( tabScr == type ){
+    //         }
+    //         dataFun('bbq');
+    //         $('.prologue_tab ul li').on('click',function(e){
+    //             e.preventDefault();
+    //             var tabScr = $(this).attr("data-type");
+    //             //console.log(tabScr);
+    //             if( tabScr == type ){
                     
-                    dataFun(tabScr);
-                }
-            })
+    //                 dataFun(tabScr);
+    //             }
+    //         })
 
 
             
-        }
-    });
+    //     }
+    // });
 
 
     //room detail click event
