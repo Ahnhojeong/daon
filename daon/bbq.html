@@ -6,13 +6,13 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
     <title>BBQ</title>
     <link href="css/special.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/25f22587a3.js" crossorigin="anonymous"></script>
-    
-
-        <!-- include jQuery & cycle2 -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-        <script src="https://malsup.github.com/jquery.cycle2.js"></script>
-        <script src="//cdn.rawgit.com/fdaciuk/ajax/v3.0.4/dist/ajax.min.js"></script>
+    <link href="imgs/favicon-daon.ico" type="image/x-icon" rel="shortcut icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slick.js"></script>
 
 </head>
 <body>
@@ -99,33 +99,27 @@
                 </p>
             </div>
 
-            <div class="gallery">
-                <div class="banner prologue_slider">
-                    <div class="banner_list cycle-slideshow"
-                    data-cycle-fx="scrollHorz" 
-                    data-cycle-timeout=0
-                    data-cycle-prev=".banner .prev"
-                    data-cycle-next=".banner .next"
-                    data-cycle-pager=".banner .pager"
-                    
-                    >
-                        <img src="imgs/bbq_01.jpg" alt="slide1">
-                        <img src="imgs/bbq_02.jpg" alt="slide2">
-                        <img src="imgs/bbq_03.jpg" alt="slide3">
+            <div class="slidewrap">
+                <div class="room_photo slider">
+                    <div class="regular">
+                        <figure>
+                            <img src="imgs/bbq_01.jpg" alt="bbq">
+                        </figure>
+                        <figure>
+                            <img src="imgs/bbq_02.jpg" alt="bbq">
+                        </figure>
+                        <figure>
+                            <img src="imgs/bbq_03.jpg" alt="bbq">
+                        </figure>
                     </div>
+                </div>
+                <div class="direc">
+                    <div>
+                        <img src="imgs/arrow-left.png" alt="left">
+                        <img src="imgs/arrow-right.png" alt="right">
+                    </div>
+                </div>
 
-                    <p class="controls">
-                        <a href="#" class="prev">
-                            <i class="fas fa-chevron-left"></i>
-                        </a>
-                        <a href="#" class="next">
-                            <i class="fas fa-chevron-right"></i>
-                        </a>
-                    </p>
-                    <p class="pager">
-                    </p>
-                    
-                </div> <!-- //banner -->
             </div>
         </aritlce>
 
@@ -149,6 +143,18 @@
                 </div>
             </article>
         </article>
+
+        <div class="schejule">
+            <a href="#">
+                <i class="far fa-bell bell"></i>
+            </a>
+        </div>
+        <div class="fixed">
+            <a href="#">
+                <i class="fas fa-chevron-up"></i>
+                <span>TOP</span>
+            </a>
+        </div>
     </main>
 
     

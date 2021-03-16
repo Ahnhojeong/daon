@@ -13,11 +13,6 @@
     <script src="js/common.js"></script>
     <script src="js/script.js"></script>
 
-    <!-- include jQuery & cycle2 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="https://malsup.github.com/jquery.cycle2.js"></script>
-    <script src="//cdn.rawgit.com/fdaciuk/ajax/v3.0.4/dist/ajax.min.js"></script>
-
 </head>
 <body>
     <header>
@@ -95,32 +90,23 @@
                     </span>
                 </div>
                 
-                    <div class="banner prologue_slider">
-                        <div class="banner_list cycle-slideshow"
-                        data-cycle-fx="scrollHorz" 
-                        data-cycle-timeout=0
-                        data-cycle-prev=".banner .prev"
-                        data-cycle-next=".banner .next"
-                        data-cycle-pager=".banner .pager"
-                        
-                        >
-                            <img src="imgs/pension_view_07.jpg" alt="slide1">
-                            <img src="imgs/pension_view_02.jpg" alt="slide2">
-                            <img src="imgs/pension_view_03.jpg" alt="slide3">
+                <div class="gallery">
+                    <div class="slidewrap">
+                        <div class="slides">
+                            <div>
+                                <img src="imgs/pension_view_01.jpg" alt="daon">
+                                <img src="imgs/pension_view_02.jpg" alt="daon">
+                                <img src="imgs/pension_view_07.jpg" alt="daon">                        
+                            </div>
                         </div>
-
-                        <p class="controls">
-                            <a href="#" class="prev">
-                                <i class="fas fa-chevron-left"></i>
-                            </a>
-                            <a href="#" class="next">
-                                <i class="fas fa-chevron-right"></i>
-                            </a>
-                        </p>
-                        <p class="pager">
-                        </p>
-                        
-                    </div> <!-- //banner -->
+                        <div class="direc">
+                            <div>
+                                <img src="imgs/arrow-left.png" alt="left" class="back">
+                                <img src="imgs/arrow-right.png" alt="right" class="next">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
             </article>
         </article>
@@ -131,48 +117,49 @@
                 <h2>
                     <span>Location</span>
                 </h2>
-                </div>
-            <div class="map">
-                <div id="daumRoughmapContainer1615855105861" class="root_daum_roughmap root_daum_roughmap_landing"></div>
             </div>
-            <div>
-                <div class="loca_info">
-                    <ul>
-                        <li>
-                            <img src="imgs/icon_location.png" alt="location">
-                            <span>주소 : 경기도 가평군 가평읍 경반안로 357-187
-                            (경반리 583-34)</span>
-                        </li>
-                        <li>
-                            <img src="imgs/icon_call.png" alt="call">
-                            <span>전화 : 031-581-0662</span>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <img src="imgs/icon_car.png" alt="car">
-                            <span>승용차 이용시 : 네비게이션에 아래 주소를 검색해주세요.
-                                * 도로명 주소 : 경기 가평군 가평읍 북한강변로 188-1
-                                * 지번 주소 : 경기 가평군 가평읍 금대리 564-1</span>
-                        </li>
-                        <li>
-                            <img src="imgs/icon_bus.png" alt="bus">
-                            <span>대중교통 이용시 : 
-                                가평역 → 10-2번/33-6번 버스 승차 → 사조리조트 하차 → 도보 약 2분, 140m 이동 → 펜션 도착</span>
-                    </li>
-                    </ul>
+
+            <div class="loca-wrap">
+                <div class="map">
+                    <div id="daumRoughmapContainer1615855105861" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                </div>
+                <div>
+                    <div class="loca_info">
+                        <ul>
+                            <li>
+                                <span><i class="fas fa-map-marker-alt icon"></i></span>
+                                <span>주소 : 경기도 가평군 가평읍 경반안로 357-187
+                                (경반리 583-34)</span>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-phone-alt icon"></i></span>
+                                <span>전화 : 031-581-0662</span>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-car icon"></i></span>
+                                <span>승용차 이용시 : 네비게이션에 아래 주소를 검색해주세요.
+                                    * 도로명 주소 : 경기 가평군 가평읍 북한강변로 188-1
+                                    * 지번 주소 : 경기 가평군 가평읍 금대리 564-1</span>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-bus icon"></i></span>
+                                <span>대중교통 이용시 : 
+                                    가평역 → 10-2번/33-6번 버스 승차 → 사조리조트 하차 → 도보 약 2분, 140m 이동 → 펜션 도착</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </article>
 
         <div class="schejule">
             <a href="#">
-                <i class="far fa-clock time"></i>
+                <i class="far fa-bell bell"></i>
             </a>
         </div>
         <div class="fixed">
             <a href="#">
-                <i class="fas fa-arrow-up"></i>
+                <i class="fas fa-chevron-up"></i>
                 <span>TOP</span>
             </a>
         </div>

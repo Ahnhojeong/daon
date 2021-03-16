@@ -63,6 +63,13 @@ $(function(){
     // });
 
 
+
+
+
+    
+
+
+
     //room detail click event
     $('.room_spot li').eq(0).on('click',function(){
         $('.only101').addClass('pop');

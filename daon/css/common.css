@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-/* font-family: 'Karla', sans-serif; */
-/* font-family: 'Lora', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@700&display=swap');
+
 
 
 html, body{width:100%; margin:0}
@@ -9,7 +8,8 @@ p,figure,h1,h2,h3,h4,h5,h6{margin:0;}
 ul,li{list-style: none; margin:0; padding:0;}
 *{
     box-sizing:border-box;
-    font-family: 'Karla',sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
 }
 img{vertical-align: top;}
 a{text-decoration: none;
@@ -105,13 +105,15 @@ header{
 
 .fixed{
     position:fixed;
-    right:0%;
     bottom:5%;
-    width:3em; height:3em;
     z-index:200;
     text-align:center;
     opacity:0;
     transition:0.5s;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    right: 5%;
 }
 .fixed.back{
     opacity: 1;
@@ -123,24 +125,30 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    color:#ceb581;
+    border-radius: 50%;
+    background: #1c222e;
+    color: white;
 }
 
 /* reser-button */
 .schejule{
-    width:3em; height:3em;
     background:#003a3a;
     position:fixed;
-    right:0%; bottom:15%;
+    bottom:15%;
     z-index:201;
-    text-align:center;
-    transition:0.5s;}
+    transition:0.5s;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    right: 5%;
+}
 
 .schejule a{
-    font-size:1.5em;
+    font-size:1.8em;
     color:white;
-    text-align:center;
-    line-height:1.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width:100%; height:100%;
 }
 .time{vertical-align: middle;}
@@ -148,6 +156,16 @@ header{
     background:#ceb581;
 }
 
+.bell{
+    animation: booking 0.5s cubic-bezier(0.39, 0.58, 0.57, 1) infinite;
+}
+@keyframes booking{
+    0%{transform: rotate(10deg);}
+    100%{transform: rotate(-10deg);}
+}
+.schejule:hover .bell{
+    animation:none;
+}
 
 /* title */
 
@@ -304,6 +322,13 @@ footer{
 
 @media (max-width:480px){
     main{margin:42px 0 0;}
+
+    .schejule{width:3rem; height:3rem;}
+    .schejule a{font-size:1.5rem;}
+    .fixed{width:3rem; height:3rem;}
+    .fixed a{
+        font-size: 0.8rem;
+    }
     
     header{width:100%; margin:0 auto; height:auto;}
     .head{

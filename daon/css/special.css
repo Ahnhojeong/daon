@@ -25,67 +25,52 @@
     margin-bottom:50px;
 }
 
-/* gallery */
-.gallery{width:80%; margin:0 auto;}
+
 
 
 /* slide */
 
-.banner{
-    width:100%; margin:0 auto;
-    position: relative;
-}
-.banner_list .slide {
-    width:100%;
+.slidewrap{
+    width: 80%; margin:0 auto;
     height:600px;
-    background-repeat: no-repeat;
-    background-position:center top;
-    background-size:cover;
+    position:relative;
+}
+.room_photo{
+    width:100%; height:100%;
+    overflow: hidden;
+}
+
+.slick-slider figure{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.slick-slider figure img{
+    width:100%; height:100%;
+}
+
+.regular{width:100%; height:100%;}
+
+/* direc */
+
+.direc{
+    position:absolute;
+    margin:0 auto;
     text-align:center;
-    padding-top:163px;
-    box-sizing: border-box;
+    width: 100%;
+    padding: 0 5%;
+    top: 50%;
+    transform: translateY(-50%);
 }
-.banner_list img{
-    width:100%;
-    height:100%;
-}
-
-
-.controls{
-    width:80%;
+.direc div{
+    width:100%; margin:0;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    position:absolute;
-    left:10%; top:50%;
-    text-align:center;
-    transform:translateY(-50%);
-    z-index:102;
 }
-.controls a{
-    font-size:55px;
-    color:rgba(255,255,255,0.5);
-    z-index:102;
-
-}
-
-.pager{
-    position:absolute;
-    left:0; right:0; bottom:27px;
-    text-align: center;
-    z-index:103;
-}
-.pager span{
-    width:15px; height:15px;
-    background:rgba(255,255,255,0.8);
-    border:3px solid transparent;
-    margin:0 15px; border-radius:50%;
-    text-indent: -9999em;
-    display:inline-block;
-}
-.pager span.cycle-pager-active{
-    background:none;
-    border:3px solid rgba(255,255,255,0.8);
+.prev, .next{
+    color:white !important;
+    font-size:3em;
 }
 
 /* all_special */
@@ -176,14 +161,9 @@ footer{
         font-size:0.7rem;
     }
 
-    .controls a{
-        font-size:30px;
-    }
-    .pager{bottom:0;}
-    .pager span{
-        width:10px; height:10px;
-        margin:0 10px;
-    }
+    /* slide */
+    .slidewrap{height:200px;}
+    .direc div img{width:8%;}
 
     /* tab */
 
