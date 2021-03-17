@@ -39,8 +39,6 @@ window.addEventListener('load',function(){
  }
 
 
-
-
 //top event
     var btt = document.querySelector('.fixed'),
     docElem = document.documentElement,
@@ -67,17 +65,6 @@ window.addEventListener('scroll', function(){
     }
 });
 
-
-
-//kakao map
-new daum.roughmap.Lander({
-	"timestamp" : "1615855105861",
-	"key" : "24uif",
-	"mapWidth" : "640",
-	"mapHeight" : "360"
-}).render();
-
-
 // top 클릭이벤트
 btt.addEventListener('click',function(ev){
     ev.preventDefault();
@@ -93,7 +80,13 @@ function scrollToTop(){
     },15);
 }
 
-
+//kakao map
+new daum.roughmap.Lander({
+	"timestamp" : "1615855105861",
+	"key" : "24uif",
+	"mapWidth" : "640",
+	"mapHeight" : "360"
+}).render();
 
 
 });

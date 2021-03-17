@@ -403,7 +403,9 @@ ul,li{list-style: none; margin:0; padding:0;}
         display:inline-block;
         font-size:0.7rem;
     }
-    
+    /* slide */
+    .slidewrap{height:200px;}
+    .direc div img{width:8%;}
 
     .room_spot li{
         display:block;

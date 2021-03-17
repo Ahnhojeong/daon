@@ -187,7 +187,7 @@ svg{
 }
 
 
-.main_con1 li div{
+.maintxt-wrap{
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -195,7 +195,27 @@ svg{
     padding:60px;
     box-sizing:border-box;
     background:#fcf3e4;
+    overflow: hidden;
 }
+.main_txt-right{
+    transform:translateX(50%);
+    opacity:0;
+    transition:1s;
+}
+.main_txt-right.active{
+    transform:translateX(0);
+    opacity:1;
+}
+.main_txt-left{
+    transform: translateX(-50%);
+    opacity:0;
+    transition:1s;
+}
+.main_txt-left.active{
+    transform:translateX(0);
+    opacity:1;
+}
+
 
 .main_con1 li div h3{
     margin:0;
@@ -304,11 +324,11 @@ svg{
     .main_con1 li figure{
         width:100%; margin:0 auto;
     }
+    .maintxt-wrap{padding:30px;}
     .main_con1 li div{
         display:block;
         width:100%;
         text-align:center;
-        padding:10%;
     }
     .main_con1 li div h3{
         font-size:1rem;

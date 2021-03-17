@@ -27,8 +27,7 @@ ul,li{list-style: none; margin:0; padding:0;}
 /* prologue_wel */
 .prologue_wel{width:100%;}
 .prologue_wel div{
-    width:80%; margin:0 auto;
-    overflow: hidden;}
+    width:80%; margin:0 auto;}
 .prologue_wel div figure{
     width:60%;
     }
@@ -53,7 +52,8 @@ ul,li{list-style: none; margin:0; padding:0;}
     line-height:1.5em;
 }
 
-.prologue_wel div:nth-of-type(2){
+.about-img{
+    padding-top:5%;
     width:80%;
     display:flex;
     justify-content: space-between;
@@ -61,14 +61,42 @@ ul,li{list-style: none; margin:0; padding:0;}
     margin-top:40px;
     margin-bottom:40px;
 }
-
-.prologue_wel div:nth-of-type(2) figure{
+.about-img figure{
     width:100%; margin-right:20px;
 }
-.prologue_wel div:nth-of-type(2) figure:nth-of-type(3){
-    margin-right:0;
+
+.about-img-one{
+    transform:translateY(20%);
+    opacity:0;
+    transition: all 0.5s 0.3s cubic-bezier(.25,.25,.75,.75);
 }
-.prologue_wel div:nth-of-type(2) figure img{
+.about-img-two{
+    transform:translateY(30%);
+    opacity:0;
+    transition: all 0.5s 0.5s cubic-bezier(.25,.25,.75,.75);
+}
+.about-img-three{
+    transform:translateY(40%);
+    opacity:0;
+    margin-right:0;
+    transition: all 0.5s 0.7s cubic-bezier(.25,.25,.75,.75);
+}
+.about-img-one.active{
+    transform:translateY(0);
+    opacity:1;
+}
+.about-img-two.active{
+    transform:translateY(0);
+    opacity:1;
+}
+.about-img-three.active{
+    transform:translateY(0);
+    opacity:1;
+}
+
+
+
+.about-img figure img{
     width:100%; vertical-align: middle;
 }
 
@@ -195,6 +223,13 @@ ul,li{list-style: none; margin:0; padding:0;}
     html{width:100%;}
     main{margin:42px 0 0;}
     
+    /* slide */
+    .slidewrap{height:200px;}
+    .slides div img{
+        height:50%;
+        object-fit: cover;
+    }
+    .direc div img{width:8%;}
     
     .prologue_title {
         width:100%; margin:0 auto;
@@ -240,10 +275,10 @@ ul,li{list-style: none; margin:0; padding:0;}
     .prologue_wel div:nth-of-type(1) p span{
         font-size:0.8rem;
     }
-    .prologue_wel div:nth-of-type(2){
-        margin-top:10px;
-        margin-bottom:40px;
-    }
+
+    .about-img{padding-top:0; flex-direction: column;}
+    .about-img figure{margin-bottom:10px;}
+
     .subtitle{
         width:100%; margin:13% auto;}
     .prologue_land .land_text p{
@@ -255,31 +290,19 @@ ul,li{list-style: none; margin:0; padding:0;}
     .prologue_land .land_text span:nth-of-type(2){
         font-size:0.8rem;
         margin:6% 0;}
-
-    .controls a{
-        font-size:30px;
-    }
-    .pager{bottom:0;}
-    .pager span{
-        width:10px; height:10px;
-        margin:0 10px;
-    }
-
+    
+    .loca-wrap{flex-direction: column;}
+    .map{width:100%;}
+    .map > div{width:100% !important;}
+    .prologue_loca .loca_info{width:100%;}
     .prologue_loca .loca_info ul{
-        width:100%;
-        display:flex;
-        flex-direction: column;
+        padding:10% 0;
     }
     .prologue_loca .loca_info ul li{
-        margin-top:20px;
-        margin-bottom:0;
-        display:inline-block;
+        display: flex;
     }
-    .prologue_loca .loca_info ul li img{
-        
+    .prologue_loca .loca_info ul li span:nth-of-type(2){
+        margin-left:10px;
     }
-    .prologue_loca .loca_info ul li span{
-        white-space: pre-line;
-        font-size:0.8rem;
-    }
+
 }
