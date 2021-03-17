@@ -3,16 +3,40 @@ $(function(){
     $('footer').load('inc.html footer div');
 
     function init(){
+        if(localStorage.pageNum != 'main'){
+            $('nav > ul > li').eq(localStorage.pageNum).find('a').css({color:'#ceb581'});
+        }
 
-        $('nav li > a').on('click',function(){
-            localStorage.pageNum = $(this).index();
-            console.log(localStorage.pageNum);
-            $(this).css({color:'#ceb581'});
+        $('.head h1 a').on('click',function(e){
+            e.preventDefault();
+            localStorage.pageNum = 'main';
+            var $this = $(this);
+            setTimeout(function(){
+                location.href = $this.attr('href');
+            },100);
         })
-        $('nav li > a').eq(localStorage.pageNum).css({color:'#ceb581'});
+        $('nav li > a').on('click',function(e){
+            e.preventDefault();
+            localStorage.pageNum = $(this).parents('li').index();
+            var $this = $(this);
+            setTimeout(function(){
+                location.href = $this.attr('href');
+            },100);
+        })
 
     }
+    
+    switch(localStorage.pageNum){
+        case '0' : about(); break;
+        case '1' : room(); break;
+        case '2' : special(); break;
+        case '3' : reservation(); break;
+        default : main();
+    }
 
+    function special(){}
+    function reservation(){}
+    
     // $.ajax({
     //     url:'data.json',
     //     success:function(data){
@@ -63,6 +87,7 @@ $(function(){
     // });
 
     //main & sub page - scroll (item up)
+function main(){
     var winHei,scrPos,imgPos,imgPos2;
     $(window).on('scroll',function(){
         winHei = $(window).height();
@@ -74,6 +99,13 @@ $(function(){
                 $('.main_txt-right, .main_txt-left').eq(i).addClass('active');
             }
         });
+    });
+}
+function about(){
+    var winHei,scrPos,imgPos,imgPos2;
+    $(window).on('scroll',function(){
+        winHei = $(window).height();
+        scrPos = $(this).scrollTop();
 
         $('.about-img-one, .about-img-two, .about-img-three').each(function(i){
             imgPos2 = $('.about-img-one, .about-img-two, .about-img-three').eq(i).offset().top;
@@ -83,12 +115,12 @@ $(function(){
         })
 
     });
-
+}
 
     
 
 
-
+function room(){
     //room detail click event
     $('.room_spot li').eq(0).on('click',function(){
         $('.only101').addClass('pop');
@@ -127,7 +159,7 @@ $(function(){
         }
   
       });
-
+}
 
 
 })

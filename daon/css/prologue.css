@@ -28,9 +28,10 @@ ul,li{list-style: none; margin:0; padding:0;}
 .prologue_wel{width:100%;}
 .prologue_wel div{
     width:80%; margin:0 auto;}
-.prologue_wel div figure{
-    width:60%;
-    }
+.prologue_wel div:nth-of-type(1) figure{
+    width: 66.666%;
+    padding-right: 20px;
+}
 .prologue_wel div figure img{width:100%;}
 .prologue_wel div:nth-of-type(1){
     display:flex;
@@ -39,7 +40,7 @@ ul,li{list-style: none; margin:0; padding:0;}
 }
 
 .prologue_wel div:nth-of-type(1) p{
-    width:40%; margin:0;
+    width:33.333%; margin:0;
     white-space: pre-line;
     padding-left:3%;
 }

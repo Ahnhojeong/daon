@@ -106,6 +106,9 @@ ul,li{list-style: none; margin:0; padding:0;}
 .icon{
     font-size:1.2em;
 }
+.food-info li:nth-of-type(2) .icon{
+    transform: translateX(25%);
+}
 
 
 
