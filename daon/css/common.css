@@ -3,7 +3,7 @@
 
 
 
-html, body{width:100%; margin:0}
+html, body{width:100%; margin:0; background:#f6f6f6;}
 p,figure,h1,h2,h3,h4,h5,h6{margin:0;}
 ul,li{list-style: none; margin:0; padding:0;}
 *{
@@ -17,7 +17,41 @@ a{text-decoration: none;
 main{
     width:100%;
     margin:45px auto 0;
-    }
+}
+.gallery{z-index:1001;}
+
+/* scroll down */
+svg{
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    stroke: white;
+    fill: white;
+    animation:scrollLoad 1s 1s cubic-bezier(0.42, 0, 0.29, 0.98) both;
+}
+.main_mouse{bottom:-5%;}
+.sub_mouse{bottom:50%;}
+
+@keyframes scrollLoad{
+    0%{opacity:0; width: 400px;}
+    100%{opacity:1; width:300px;}
+}
+
+.down{
+    animation:scroll 1s 1s cubic-bezier(0, 0, 0.76, 0.29) infinite;
+}
+@keyframes scroll{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+
+.down:nth-of-type(1){
+    animation-delay: 0.3s;
+}
+.down:nth-of-type(2){
+    animation-delay: 0.35s;
+}
 
 
 /* --------header-------- */
@@ -29,7 +63,7 @@ header{
     margin:0 auto;
     padding:0;
     position:fixed;
-    z-index: 999;
+    z-index: 20000;
     left:0; top:0;
     background:#003a3a;
     
@@ -74,17 +108,18 @@ header{
 }
 .head .menu .submenu{
     position:absolute;
-    left:0; bottom:0;
-    transform: translateY(100%) translateX(-25%);
-    background:rgba(255,255,255,0.6);
+    transform: translateX(-50%);
+    left:50%;
+    background:white;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
     display:none;
     text-align: center;
 }
-.head .menu .last .submenu{
+/* .head .menu .last .submenu{
     position:absolute;
     left:0; bottom:0;
     transform: translateY(100%) translateX(-10%);
-}
+} */
 .head .menu .submenu li{
     text-align: center;
 }
@@ -106,7 +141,7 @@ header{
 .fixed{
     position:fixed;
     bottom:5%;
-    z-index:200;
+    z-index:200000;
     text-align:center;
     opacity:0;
     transition:0.5s;
@@ -135,7 +170,7 @@ header{
     background:#003a3a;
     position:fixed;
     bottom:15%;
-    z-index:201;
+    z-index:100000;
     transition:0.5s;
     border-radius: 50%;
     width: 4rem;
@@ -260,7 +295,7 @@ header{
     left:50%;
     transform:translateX(-50%) translateY(-50%);
     padding:0 20px; 
-    background:#fff;
+    background:#f6f6f6;
     font-size:18px;
 }
 
@@ -272,8 +307,12 @@ table{border-collapse:collapse;}
 
 footer{
     width:100%; height:100%;
-    margin:10% auto 0;
-    background:#1c222e;}
+    margin:0 auto;
+    background:#1c222e;
+    z-index: 3000;
+    position:sticky;
+}
+
 .foot{
     width:80%; height:100%;
     margin:0 auto;

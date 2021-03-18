@@ -4,24 +4,54 @@ window.addEventListener('load',function(){
 //slide event
 
 switch(localStorage.pageNum){
-    case '0' : about(); break;
-    case '1' : room(); break;
-    case '2' : special(); break;
-    case '3' : reservation(); break;
-    default : main();
+    case '0' :about(); break; //about
+    case '1' : room(); main(); break; //room
+    case '2' : main(); break; //special
+    case '3' : reservation(); break; //reservation
+    default : main(); //home
 }
-function special(){}
-function reservation(){}
 
+function reservation(){};
+function room(){
+    //mousewheel event
+
+    var delta,loop,num=0,pos=[];
+
+    $('section').each(function(i){
+        pos.push( $('section').eq(i).offset().top );
+    });
+    console.log(pos);
+
+    $(window).on('mousewheel DOMmouseScroll',function(e){
+        delta = e.originalEvent.wheelDelta || -e.originalEvent.detail;
+        
+        clearTimeout(loop);
+        loop = setTimeout(function(){
+            if(delta < 0){
+                //down
+                if(num < 5){num++;} //num = 0, 1, 2
+            }else{
+                //up
+                if(num != 0){num--;} //num= 2, 1
+            }
+            
+            $('main > div').animate({marginTop:-pos[num]});
+        },200);
+    })
+
+
+};
 
 function main(){
     //slide
+
     var slide = document.querySelector('.slides div'); 
-    var slideCount = slide.querySelectorAll('img').length; 
+    var slideCount = slide.querySelectorAll('img').length;
     var btnBack = document.querySelector('.back');
     var btnNext = document.querySelector('.next');
     var current = 0;
-   
+    console.log(btnBack);
+
     function next(){
         current++;
         if(current == slideCount) current = 0;
@@ -37,11 +67,7 @@ function main(){
     btnNext.addEventListener('click',next);
     btnBack.addEventListener('click',back);
    
-   
-   
     //slide infinite
-   
-   
     setInterval(infinite,5000); 
    
     var num = 0;
@@ -50,8 +76,17 @@ function main(){
         if(num == slideCount) num = 0; 
         slide.style = 'transform:translateX('+ -100 * num + '%)'; 
     }
-}
+};
 
+function about(){
+    //kakao map
+    new daum.roughmap.Lander({
+        "timestamp" : "1615855105861",
+        "key" : "24uif",
+        "mapWidth" : "640",
+        "mapHeight" : "360"
+    }).render();
+}
 
 //top event
     var btt = document.querySelector('.fixed'),
@@ -94,15 +129,9 @@ function scrollToTop(){
     },15);
 }
 
-function about(){
-    //kakao map
-    new daum.roughmap.Lander({
-        "timestamp" : "1615855105861",
-        "key" : "24uif",
-        "mapWidth" : "640",
-        "mapHeight" : "360"
-    }).render();
-}
+
+
+
 
 
 });

@@ -4,7 +4,7 @@ $(function(){
 
     function init(){
         if(localStorage.pageNum != 'main'){
-            $('nav > ul > li').eq(localStorage.pageNum).find('a').css({color:'#ceb581'});
+            $('nav > ul > li').eq(localStorage.pageNum).find('.menutitle').css({color:'#ceb581'});
         }
 
         $('.head h1 a').on('click',function(e){
@@ -15,9 +15,16 @@ $(function(){
                 location.href = $this.attr('href');
             },100);
         })
-        $('nav li > a').on('click',function(e){
+        $('.menutitle').on('click',function(e){
             e.preventDefault();
             localStorage.pageNum = $(this).parents('li').index();
+            var $this = $(this);
+            setTimeout(function(){
+                location.href = $this.attr('href');
+            },100);
+        })
+        $('.submenu li a').on('click',function(){
+            localStorage.pageNum = $(this).parent().parent().parent().index();
             var $this = $(this);
             setTimeout(function(){
                 location.href = $this.attr('href');
@@ -27,7 +34,7 @@ $(function(){
     }
     
     switch(localStorage.pageNum){
-        case '0' : about(); break;
+        case '0' : main(); about(); break;
         case '1' : room(); break;
         case '2' : special(); break;
         case '3' : reservation(); break;
@@ -36,6 +43,7 @@ $(function(){
 
     function special(){}
     function reservation(){}
+    function room(){}
     
     // $.ajax({
     //     url:'data.json',
@@ -115,50 +123,6 @@ function about(){
         })
 
     });
-}
-
-    
-
-
-function room(){
-    //room detail click event
-    $('.room_spot li').eq(0).on('click',function(){
-        $('.only101').addClass('pop');
-    });
-    $('.room_spot li').eq(1).on('click',function(){
-        $('.only102').addClass('pop');
-    });
-    $('.room_spot li').eq(2).on('click',function(){
-        $('.love101').addClass('pop');
-    });
-    $('.room_spot li').eq(3).on('click',function(){
-        $('.love102').addClass('pop');
-    });
-
-    $('.close').on('click',function(){
-        $('.mainspot').removeClass('pop');
-    })
-
-    //room photo slide event
-    $(".regular").slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        arrows: true
-      });
-  
-      $('.regular').on({
-        'beforeChange': function (event, slick, currentSlide, nextSlide) {
-          console.log('before');
-        },
-        'afterChange': function (slick, currentSlide) {
-          console.log('after');
-        }
-  
-      });
 }
 
 

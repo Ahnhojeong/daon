@@ -5,6 +5,111 @@
 
 ul,li{list-style: none; margin:0; padding:0;}
 
+/* new */
+.parall{transition:.5s ease-out;}
+
+.pContents {overflow:hidden; width:100%; margin:0px !important}
+.parallax{position:relative; width:100%; margin:0 auto;}
+.pSection01, .pSection02, .pSection03, .pSection04, .pSection05, .pSection06 {overflow:hidden; position:absolute; left:50%; width:100%; transform:translateX(-50%);}
+.pSection01 > *, .pSection02 > *, .pSection03 > *, .pSection04 > *, .pSection05 > *, .pSection06 > * {position:absolute; background-size: cover;}
+
+.aboutwrap{height:3800px;}
+.about01 {top:0px; background:url('../imgs/about_title.jpg') no-repeat left top; background-size: cover; height:1200px;}
+.about02 {top:1200px; background:url('../imgs/about_04.jpg') no-repeat left top; z-index:1000; background-size: cover;height:1200px;}
+.about03 {top:2400px; z-index:2000;height:1200px;}
+
+
+.pSection01 div{
+    width:100%; height:100%;
+    text-align: center;
+    top: 40%;
+    transform: translateY(-25%);
+}
+.pSection01 div h2{font-size:50px;}
+.pSection01 div p{
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+.pSection01 div h4{
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.about02 article{
+    width:100%; height:100%;
+    text-align: left;
+    top: 300px; left: 10%;
+    transform: translateY(-25%);
+    color:white;
+    z-index:999;
+    width: 800px;
+    height: 300px;
+    border: 1px solid white;
+    padding: 3%;
+    display:flex; flex-direction: column;
+    justify-content: center;
+}
+.about02 article h2{font-size:50px;}
+.about02 article p{
+    line-height:1.5em;
+}
+.about02 article p:nth-of-type(1){padding-bottom:10px;}
+.about02::after{
+    content: '';
+    background:rgba(0,0,0,0.5);
+    position:absolute;
+    left:0;top:0;
+    width:100%; height:100%;
+}
+
+.about03{
+    background:#f6f6f6;
+    margin:0 auto;
+}
+.about03 .loca-wrap{
+    width:100%; height:100%;
+    left:0; padding:5%;
+}
+.about03 .loca-wrap > div{
+    text-align:center;
+}
+.about03 .loca-wrap > div h2{
+    font-size:30px;
+}
+.about03 .loca-wrap div > p{
+    font-size:14px;
+    letter-spacing: 5px;
+}
+.loca_info{
+    text-align:left;
+    width: 50%;
+    margin: 0 auto;
+}
+.loca_info ul li{
+    display:flex;
+    line-height:1.5em;
+    padding:5px 0;
+}
+.icon{margin-right:10px;}
+.map{
+    width:100%;
+    padding:5% 0;
+}
+.map div{
+    width:100%; height:100%;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* main */
 
 .prologue_title figure figcaption{
@@ -179,7 +284,7 @@ ul,li{list-style: none; margin:0; padding:0;}
 
 /* prologue_loca */
 
-.prologue_loca{
+/* .prologue_loca{
     width:100%; margin:0 auto;
 }
 
@@ -215,7 +320,7 @@ ul,li{list-style: none; margin:0; padding:0;}
     line-height:1.5em;
     font-size:14px;
     margin-left:20px;
-}
+} */
 
 /* ----------responsive---------- */
 
