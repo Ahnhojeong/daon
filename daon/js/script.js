@@ -17,8 +17,8 @@ function room(){
 
     var delta,loop,num=0,pos=[];
 
-    $('section').each(function(i){
-        pos.push( $('section').eq(i).offset().top );
+    $('.contentTop').each(function(i){
+        pos.push( $('.contentTop').eq(i).offset().top );
     });
     console.log(pos);
 

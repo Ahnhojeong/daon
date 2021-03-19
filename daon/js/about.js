@@ -9,7 +9,7 @@ $(function(){
         $sectionInfo.push($this.offset().top);
     }); //section each문
     
-    console.log($sectionInfo[0]);
+    console.log($sectionInfo);
     $section.css({position:'fixed'}); 
 
     var loop;

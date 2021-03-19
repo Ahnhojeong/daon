@@ -13,27 +13,62 @@ ul,li{list-style: none; margin:0; padding:0;}
 .pSection01, .pSection02, .pSection03, .pSection04, .pSection05, .pSection06 {overflow:hidden; position:absolute; left:50%; width:100%; transform:translateX(-50%);}
 .pSection01 > *, .pSection02 > *, .pSection03 > *, .pSection04 > *, .pSection05 > *, .pSection06 > * {position:absolute; background-size: cover;}
 
-.aboutwrap{height:3800px;}
+.aboutwrap{height:4200px;}
 .about01 {top:0px; background:url('../imgs/about_title.jpg') no-repeat left top; background-size: cover; height:1200px;}
 .about02 {top:1200px; background:url('../imgs/about_04.jpg') no-repeat left top; z-index:1000; background-size: cover;height:1200px;}
-.about03 {top:2400px; z-index:2000;height:1200px;}
+.about03 {top:2400px; z-index:2000;height:2000px;}
 
 
-.pSection01 div{
+.pSection01 div:nth-of-type(1){
     width:100%; height:100%;
     text-align: center;
-    top: 40%;
-    transform: translateY(-25%);
+    top:30%;
 }
-.pSection01 div h2{font-size:50px;}
+.pSection01 div:nth-of-type(2){
+    width:100%;height:100%;
+}
+.pSection01 div h2{
+    font-size:50px;
+    overflow: hidden;
+}
 .pSection01 div p{
     letter-spacing: 5px;
     margin-bottom: 10px;
+    overflow: hidden;
 }
 .pSection01 div h4{
     font-size: 14px;
     font-weight: 200;
+    overflow: hidden;
 }
+
+.about-inner{
+    animation:fontAni 2s ease both;
+}
+@keyframes fontAni {
+    0%{
+        transform:scale(0.9);
+        opacity:0;
+    }
+    100%{
+        transform:scale(1);
+        opacity:1;
+    }
+}
+
+.about-inner h2 span{
+    display:inline-block;
+    
+}
+.about-inner p span{
+    display:inline-block;
+    
+}
+.about-inner h4 span{
+    display:inline-block;
+   
+}
+
 
 .about02 article{
     width:100%; height:100%;
@@ -68,7 +103,8 @@ ul,li{list-style: none; margin:0; padding:0;}
 }
 .about03 .loca-wrap{
     width:100%; height:100%;
-    left:0; padding:5%;
+    left:0;
+    padding:5% 0;
 }
 .about03 .loca-wrap > div{
     text-align:center;
@@ -76,7 +112,7 @@ ul,li{list-style: none; margin:0; padding:0;}
 .about03 .loca-wrap > div h2{
     font-size:30px;
 }
-.about03 .loca-wrap div > p{
+.letter p{
     font-size:14px;
     letter-spacing: 5px;
 }
@@ -99,14 +135,6 @@ ul,li{list-style: none; margin:0; padding:0;}
     width:100%; height:100%;
     margin: 0 auto;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -282,45 +310,6 @@ ul,li{list-style: none; margin:0; padding:0;}
 }
 
 
-/* prologue_loca */
-
-/* .prologue_loca{
-    width:100%; margin:0 auto;
-}
-
-.loca-wrap{
-    width:80%; margin:0 auto;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.prologue_loca .loca_info{
-    width:80%; margin:0 auto;
-    
-}
-.prologue_loca .loca_info ul{
-    width:100%; margin:0 auto;
-    padding:0 5%;
-}
-.prologue_loca .loca_info ul li{
-    display:flex;
-    width:100%;
-    padding-bottom:20px;
-}
-
-
-.prologue_loca .loca_info ul li span{
-    display:inline-block;
-}
-.icon{font-size:1.3em;}
-.prologue_loca .loca_info ul li span:nth-of-type(2){
-    white-space: pre-line;
-    width:100%;
-    line-height:1.5em;
-    font-size:14px;
-    margin-left:20px;
-} */
 
 /* ----------responsive---------- */
 
@@ -328,87 +317,40 @@ ul,li{list-style: none; margin:0; padding:0;}
 @media (max-width:480px){
     html{width:100%;}
     main{margin:42px 0 0;}
-    
-    /* slide */
-    .slidewrap{height:200px;}
-    .slides div img{
-        height:50%;
-        object-fit: cover;
+    .pSection01 div:nth-of-type(1){
+        top:15%;
     }
-    .direc div img{width:8%;}
-    
-    .prologue_title {
-        width:100%; margin:0 auto;
-        overflow: hidden;
+    .pSection01 div h2{
+        font-size:40px;
     }
-    .prologue_title figure {
-        position:relative;
-        width:200%;
+    .pSection01 div h4{
+        width: 80%;
+        margin: 0 auto;
     }
-    .prologue_title figure img{
-        transform:translateX(-40%);
+    .about01{
+        background-position:center;
     }
-    .prologue_title figure figcaption {
-        transform:translateX(-25%);
-        color:white;
+    .loca_info{
+        width:80%;
+        margin:0 auto;
     }
-    .prologue_title figure figcaption p{
-        font-size:1rem;
+    .map{
+        width:80%;
+        margin:0 auto;
     }
-    .prologue_title figure figcaption small{
-        font-size:0.7rem;
+    .map div{
+        width:100% !important;
     }
-    .prologue_tab ul li{
-        width:6rem; height:1.5rem;
-        line-height: 1.4rem;
+    .about02 article{
+        width:300px;
+        height:500px;
     }
-    .prologue_tab ul li a{
-        display:inline-block;
-        font-size:0.7rem;
+    .about02 article div{
+        margin-top:20px;
     }
-    .prologue_wel div:nth-of-type(1){
-        display:block;
-    }
-    
-    .prologue_wel div figure{width:100%;}
-    .prologue_wel div:nth-of-type(1) p{
-        width:100%;
-        text-align:center;
-        padding:0;}
-    .prologue_wel div:nth-of-type(1) p b{
-        font-size:0.9rem;
-    }
-    .prologue_wel div:nth-of-type(1) p span{
-        font-size:0.8rem;
-    }
-
-    .about-img{padding-top:0; flex-direction: column;}
-    .about-img figure{margin-bottom:10px;}
-
-    .subtitle{
-        width:100%; margin:13% auto;}
-    .prologue_land .land_text p{
-        font-size:20px;
-    }
-    .prologue_land .land_text span:nth-of-type(1){
-        font-size:0.5rem;
-    }
-    .prologue_land .land_text span:nth-of-type(2){
-        font-size:0.8rem;
-        margin:6% 0;}
-    
-    .loca-wrap{flex-direction: column;}
-    .map{width:100%;}
-    .map > div{width:100% !important;}
-    .prologue_loca .loca_info{width:100%;}
-    .prologue_loca .loca_info ul{
+    .about03 .loca-wrap{
         padding:10% 0;
     }
-    .prologue_loca .loca_info ul li{
-        display: flex;
-    }
-    .prologue_loca .loca_info ul li span:nth-of-type(2){
-        margin-left:10px;
-    }
+
 
 }

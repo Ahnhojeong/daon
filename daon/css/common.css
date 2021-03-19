@@ -31,7 +31,9 @@ svg{
     animation:scrollLoad 1s 1s cubic-bezier(0.42, 0, 0.29, 0.98) both;
 }
 .main_mouse{bottom:-5%;}
-.sub_mouse{bottom:50%;}
+.sub_mouse{
+    left: 50%;
+    bottom: 5%;}
 
 @keyframes scrollLoad{
     0%{opacity:0; width: 400px;}
@@ -307,10 +309,9 @@ table{border-collapse:collapse;}
 
 footer{
     width:100%; height:100%;
-    margin:0 auto;
+    margin:100px auto 0;
     background:#1c222e;
     z-index: 3000;
-    position:sticky;
 }
 
 .foot{
@@ -421,6 +422,7 @@ footer{
         display:block;
         color:white;
         transform: translateY(0) translateX(0);
+        box-shadow:none;
     }
     
     .head .menu .submenu li{
@@ -456,4 +458,7 @@ footer{
         font-size:10px;
     }
 
+    .sub_mouse{
+        bottom:35%;
+    }
 }

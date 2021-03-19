@@ -27,12 +27,20 @@ $(function(){
             localStorage.pageNum = $(this).parent().parent().parent().index();
             var $this = $(this);
             setTimeout(function(){
-                location.href = $this.attr('href');
+                // location.href = $this.attr('href');
+                window.open($this.attr('href'))
             },100);
         })
 
     }
-    
+    // var winHei=0;
+    // setTimeout(function(){
+    //     winHei = $('main').outerHeight(true);
+    //     $('html').height(winHei);
+    // },1000);
+    // console.log(winHei);
+
+
     switch(localStorage.pageNum){
         case '0' : main(); about(); break;
         case '1' : room(); break;

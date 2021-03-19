@@ -13,9 +13,9 @@
 .pSection01 > *, .pSection02 > *, .pSection03 > *, .pSection04 > *, .pSection05 > *, .pSection06 > * {position:absolute; background-size: cover;}
 
 
-.tripwrap{height:3000px;}
+.tripwrap{height:3400px;}
 .special01{top:0px;  height:100vh; z-index:1000;}
-.special02{top:800px; height:1500px; z-index:2000; background:#f6f6f6;}
+.special02{top:800px; height:2000px; z-index:2000; background:#f6f6f6;}
 
 .pSection01 div{
     width:100%; height:100%;
@@ -265,4 +265,43 @@
 
 .all_special{
     padding-top:5%;
+}
+
+@media (max-width:480px){
+    .popup_all{
+        flex-direction: column;
+        padding:0;
+    }
+    .popup .popup_01{
+        width:100%;
+    }
+    .popup .popup_02{
+        width:100%;
+    }
+    .place-wrap{
+        flex-direction: column;
+    }
+    .place-wrap div{
+        width:100%;
+    }
+    .pla p{
+        margin:15px auto 0;
+    }
+    .all_special{
+        padding-top:10%;
+    }
+    .special_spot{
+        padding-top:10%;
+    }
+    .tripwrap{
+        height:3000px;
+    }
+    .special01{
+        height:50%;
+    }
+    .special02{
+        top:400px;
+    }
+    footer{margin-top:0;}
+
 }
