@@ -30,4 +30,16 @@ $(function(){
         //},50);
     }); // window scroll event
 
+    var secHei01 = $('.pSection01').children('div').outerHeight(true);
+    $('.special01').height(secHei01);
+    
+    var foot = $('footer').outerHeight(true);
+    var secHei02 = $('.special_spot').outerHeight(true)+foot;
+    $('.special02').height(secHei02);
+    console.log(secHei02)
+
+    var wrapHei = secHei01+secHei02;
+    $('.tripwrap').height(wrapHei);
+
+
 });

@@ -280,6 +280,7 @@
     }
     .place-wrap{
         flex-direction: column;
+        height:800px;
     }
     .place-wrap div{
         width:100%;

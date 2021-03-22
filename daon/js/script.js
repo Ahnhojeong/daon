@@ -21,6 +21,10 @@ function room(){
         pos.push( $('.contentTop').eq(i).offset().top );
     });
     console.log(pos);
+    
+    // var secHei = $('pWrap > section').outerHeight(true);
+    // $('pWrap').height(secHei);
+
 
     $(window).on('mousewheel DOMmouseScroll',function(e){
         delta = e.originalEvent.wheelDelta || -e.originalEvent.detail;
@@ -35,9 +39,11 @@ function room(){
                 if(num != 0){num--;} //num= 2, 1
             }
             
-            $('main > div').animate({marginTop:-pos[num]});
+            $('main > div').stop().animate({marginTop:-pos[num]});
+            
         },200);
     })
+
 
 
 };

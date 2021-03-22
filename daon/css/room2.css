@@ -48,17 +48,18 @@ body{width:100%; height:100%;}
     overflow: hidden;
 }
 
-.roomwrap div {
+.room_preview {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.room_preview figure {
     width: 100%;
     height: 100%;
 }
 
-.roomwrap div figure {
-    width: 100%;
-    height: 100%;
-}
-
-.roomwrap div figure img {
+.room_preview figure img {
     width: 100%;
     height: 100%;
 }
@@ -77,10 +78,6 @@ body{width:100%; height:100%;}
     z-index: 11;
 }
 
-
-.room_preview {
-    position: relative;
-}
 
 .main_mouse {
     z-index: 11;
@@ -135,6 +132,7 @@ body{width:100%; height:100%;}
 }
 
 .room_info div {
+    width:100%; height:100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -144,7 +142,7 @@ body{width:100%; height:100%;}
     z-index: 11;
     text-align: center;
     transform: scale(1);
-    transition: all 0.4s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 .room_info div::before {
@@ -156,7 +154,7 @@ body{width:100%; height:100%;}
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    transition: all 0.4s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 .roommain {
