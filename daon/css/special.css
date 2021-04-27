@@ -6,32 +6,7 @@
 
 /* new */
 
-.parall{transition:.5s ease-out;}
 
-.pContents {overflow:hidden; width:100%; margin:0px !important}
-.parallax{position:relative; width:100%; margin:0 auto;}
-.pSection01, .pSection02, .pSection03, .pSection04, .pSection05, .pSection06 {overflow:hidden; position:absolute; left:50%; width:100%; transform:translateX(-50%);}
-.pSection01 > *, .pSection02 > *, .pSection03 > *, .pSection04 > *, .pSection05 > *, .pSection06 > * {position:absolute; background-size: cover;}
-
-
-.tripwrap{height:2300px;}
-.special01{top:0px;  height:100vh; z-index:1000;}
-.special02{top:800px; height:1500px; z-index:2000; background:#f6f6f6;}
-
-.pSection01 div{
-    width:100%; height:100%;
-    text-align: center;
-    color:white;
-}
-.pSection01 div h2{font-size:50px;}
-.pSection01 div p{
-    letter-spacing: 5px;
-    margin-bottom: 10px;
-}
-.pSection01 div h4{
-    font-size: 14px;
-    font-weight: 200;
-}
 
 .place-wrap{
     display:flex;
@@ -158,7 +133,8 @@
 
 .gallery{width:100%;}
 .slidewrap{
-    width:80%; margin:0 auto;
+    width:100%;
+    margin:0 auto;
     position:relative;
     overflow: hidden;
 }
@@ -173,6 +149,7 @@
 }
 .slides div img{
     min-width: 100%;
+    object-fit: cover;
 }
 
 /* direc */

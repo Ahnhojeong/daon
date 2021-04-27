@@ -25,6 +25,7 @@ function room(){
     // var secHei = $('pWrap > section').outerHeight(true);
     // $('pWrap').height(secHei);
 
+    
 
     $(window).on('mousewheel DOMmouseScroll',function(e){
         delta = e.originalEvent.wheelDelta || -e.originalEvent.detail;
