@@ -34,7 +34,7 @@ $(function(){
 
 
         switch(localStorage.pageNum){
-            case '0' : main(); about(); break;
+            case '0' : about(); break;
             case '1' : room(); break;
             case '2' : special(); break;
             case '3' : reservation(); break;

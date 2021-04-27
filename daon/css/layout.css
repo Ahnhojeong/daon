@@ -71,7 +71,7 @@ ul,li{list-style: none; margin:0; padding:0;}
 }
 
 .place-title{
-    font-size:30px;
+    font-size:20px;
     text-align:center;
     padding-bottom:15px;
     margin-bottom:20px;
@@ -87,7 +87,7 @@ ul,li{list-style: none; margin:0; padding:0;}
     background:black;
 }
 .place-title span{
-    font-size:16px;
+    font-size:14px;
     display:inline-block;
     margin-left:10px;
 }
@@ -103,9 +103,7 @@ ul,li{list-style: none; margin:0; padding:0;}
 
 /* --------------responsive----------- */
 
-@media (max-width:480px){
-    html{width:100%;}
-    main{margin:42px 0 0;}
+@media (max-width:768px){
 
 
     .prologue_title {

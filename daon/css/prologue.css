@@ -151,9 +151,8 @@ ul,li{list-style: none; margin:0; padding:0;}
 /* ----------responsive---------- */
 
 
-@media (max-width:480px){
+@media (max-width:768px){
     html{width:100%;}
-    main{margin:42px 0 0;}
     .pSection01 div:nth-of-type(1){
         top:15%;
     }
@@ -164,12 +163,23 @@ ul,li{list-style: none; margin:0; padding:0;}
         width: 80%;
         margin: 0 auto;
     }
+    .about_welcome > div{
+        font-size:12px;
+        line-height:1.5em;
+    }
+    .about_landscape img{
+        width:33.3333%;
+    }
     .about01{
         background-position:center;
     }
     .loca_info{
         width:80%;
-        margin:0 auto;
+        margin: 5% auto 0;
+        font-size: 14px;
+    }
+    .about03 .loca-wrap .loca_title{
+        padding-left:10%;
     }
     .map{
         width:80%;

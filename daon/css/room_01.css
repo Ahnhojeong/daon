@@ -146,7 +146,7 @@
 /* all_special */
 .place-wrap{
     display:flex;
-    width:100%; height:600px;
+    width:100%; height:500px;
 }
 .place-wrap div{
     width:25%; height:100%;
@@ -227,7 +227,7 @@
     padding-top:5%;
 }
 
-@media (max-width:480px){
+@media (max-width:768px){
     .popup_all{
         flex-direction: column;
         padding:0;
@@ -239,11 +239,12 @@
         width:100%;
     }
     .place-wrap{
-        flex-direction: column;
-        height:800px;
+        flex-wrap: wrap;
+        height:auto;
     }
     .place-wrap div{
-        width:100%;
+        width:50%;
+        height:400px;
     }
     .pla p{
         margin:15px auto 0;
@@ -251,18 +252,8 @@
     .all_special{
         padding-top:10%;
     }
-    .special_spot{
-        padding-top:10%;
-    }
-    .tripwrap{
-        height:3000px;
-    }
-    .special01{
-        height:50%;
-    }
-    .special02{
-        top:400px;
-    }
+
     footer{margin-top:0;}
+
 
 }

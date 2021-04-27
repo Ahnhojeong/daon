@@ -275,7 +275,7 @@
 /* ----------responsive---------- */
 
 
-@media (max-width:480px){
+@media (max-width:768px){
     html{width:100%;}
 
     @keyframes fontAni{
