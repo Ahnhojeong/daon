@@ -25,9 +25,9 @@ ul,li{list-style: none; margin:0; padding:0;}
     width: 100%;
     min-height: 500px;
     left: 50%;
-    -webkit-transform: translate(-50%, -10%);
-    -ms-transform: translate(-50%, -10%);
-    transform: translate(-50%, -10%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
     position: absolute;
 }
 
@@ -87,7 +87,7 @@ ul,li{list-style: none; margin:0; padding:0;}
     background:black;
 }
 .place-title span{
-    font-size:14px;
+    font-size:16px;
     display:inline-block;
     margin-left:10px;
 }
@@ -97,7 +97,7 @@ ul,li{list-style: none; margin:0; padding:0;}
 .spot_txt p{
     text-align: center;
     white-space: pre-line;
-    font-size:14px;
+    font-size:13px;
     line-height:1.6em;
 }
 

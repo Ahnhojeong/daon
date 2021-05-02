@@ -95,7 +95,7 @@
 /* special_spot */
 .special_spot{
     width:100%; margin:0;
-    padding-top:5%;
+    padding-top: 80px;
 }
 
 .special_spot .spot_txt{
@@ -141,7 +141,8 @@
     overflow: hidden;
 }
 .slides{
-    width:100%; height:600px;
+    width:100%; 
+    height:30em;
 }
 .slides div{
     display:flex;
@@ -150,8 +151,9 @@
     transition:1.5s;
 }
 .slides div img{
-    min-width: 100%;
+    width:100%;
     object-fit: cover;
+    min-height:500px;
 }
 
 /* direc */
@@ -236,11 +238,12 @@ footer{
 
 @media (max-width:768px){
 
-
+    .special_spot .spot_txt p{
+        font-size:13px;
+    }
 
     /* slide */
-    .slidewrap{height:50%;}
-    .slides{height:100%;}
+    
     .direc div img{width:8%;}
     .place-title{
         font-size: 20px;

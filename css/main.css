@@ -46,6 +46,7 @@
 
 .slide-txt p{
     animation:fontAni2 2s cubic-bezier(0.26, 0.35, 0.29, 0.94) both;
+    white-space: nowrap;
    
 }
 @keyframes fontAni2{
@@ -289,6 +290,9 @@
     .title p{font-size:1.5rem;}
     .title small{font-size:0.8rem;}
 
+    .slides div img{
+        object-fit: cover;
+    }
     .main_con1 li{
         display:block;
     }
@@ -330,5 +334,7 @@
     }
 
 }
+
+
 
 
